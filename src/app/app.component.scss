@@ -1,0 +1,54 @@
+// @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+.container {
+  //   background-image: url(../assets/bg/bg.svg);
+  //   background-position: center;
+  //   background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 140px;
+  //   background-color: #303030;
+  background-color: #ede6d4;
+  height: 100vh;
+
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+h1 {
+  color: #5173b4;
+  //   color: #ede6d4;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+}
+
+h2 {
+  color: #5173b4;
+  //   color: #ede6d4;
+  //   font-size: 2rem;
+}
+
+p {
+  color: #e58d05;
+  font-size: 2rem;
+  // font-family: "Playfair Display", serif;
+  // font-family: "Geologica", sans-serif;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 1px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+
+  img {
+    //   transform: rotate(90deg);
+    width: 320px;
+    height: 100vh;
+  }
+}
