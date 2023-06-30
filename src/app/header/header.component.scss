@@ -16,6 +16,10 @@ header {
 
     li {
       margin-left: 1.5rem;
+
+      &:hover {
+        color: #303030;
+      }
     }
   }
 }
