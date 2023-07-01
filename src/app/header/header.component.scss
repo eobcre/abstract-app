@@ -1,9 +1,12 @@
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #5173b4;
   padding: 1rem;
+  width: 100vw;
 
   ul {
     display: flex;
@@ -22,14 +25,14 @@ header {
       }
     }
   }
-}
 
-.list-resume {
-  background-color: #ec9a94;
-  text-align: center;
-  border-radius: 3px;
-  padding: 0.5rem;
-  width: 100px;
+  .list-resume {
+    background-color: #ec9a94;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0.5rem;
+    width: 100px;
+  }
 }
 
 // theme switch
