@@ -1,0 +1,20 @@
+@use "../../../scss/base";
+
+button {
+  background-color: base.$color-blue;
+  color: base.$color-cream;
+  font-family: base.$font-title-base;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  border-radius: 100%;
+  border: none;
+  //   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  width: 100px;
+  height: 100px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
