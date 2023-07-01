@@ -1,0 +1,15 @@
+@use "../../../scss/base";
+
+.side-footer-container {
+  p {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: var(--content-text-color);
+    font-family: base.$font-title-base;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    writing-mode: vertical-rl;
+    padding: 2rem;
+  }
+}
