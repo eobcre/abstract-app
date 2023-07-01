@@ -9,6 +9,7 @@ import { WorkComponent } from './section/work/work.component';
 import { ContactComponent } from './section/contact/contact.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ThemeComponent } from './components/theme/theme.component';
+import { SideFooterComponent } from './components/side-footer/side-footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ThemeComponent } from './components/theme/theme.component';
     ContactComponent,
     ButtonComponent,
     ThemeComponent,
+    SideFooterComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],
