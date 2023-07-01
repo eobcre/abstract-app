@@ -1,4 +1,5 @@
-@import "themes";
+@use "./scss/basic";
+@use "./scss/themes";
 
 * {
   margin: 0;
