@@ -1,0 +1,71 @@
+@use "../../../scss/base";
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  background-color: var(--main-content-background-color);
+  transition-duration: 500ms;
+  margin: 0 auto;
+  padding: 4rem 2.5rem;
+  height: auto;
+
+  h1 {
+    color: base.$color-orange;
+    font-family: base.$font-title-base;
+    font-size: 2.2rem;
+  }
+
+  p {
+    color: var(--content-text-color);
+    font-family: base.$font-p-base;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-top: 2rem;
+  }
+}
+
+.inner-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+button {
+  color: var(--content-text-color);
+  font-family: base.$font-p-base;
+  border-radius: 3px;
+  margin-top: 2rem;
+  padding: 4px 30px;
+}
+
+/* skills */
+.skill-container {
+  margin-top: 4rem;
+}
+
+.skill-inner-container {
+  margin-top: 2rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: var(--content-text-color);
+    font-family: base.$font-title-base;
+    font-size: 1.1rem;
+    list-style: none;
+
+    li {
+      text-align: center;
+      border-radius: 3px;
+      padding: 0.5rem;
+      width: 8rem;
+    }
+  }
+}
+
+/* md */
+@media (min-width: 800px) {
+  .skill-container {
+    margin-top: 0;
+  }
+}
