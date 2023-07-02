@@ -7,9 +7,60 @@
     bottom: 0;
     color: var(--content-text-color);
     font-family: base.$font-title-base;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     writing-mode: vertical-rl;
-    padding: 2rem;
+    padding: 1.5rem;
+
+    &:hover {
+      color: base.$color-orange;
+    }
+  }
+
+  span {
+    position: fixed;
+    left: 0;
+    bottom: 13rem;
+    border-left: 1px solid var(--content-text-color);
+    height: 40px;
+    margin-left: 2rem;
+  }
+}
+
+.icon-container {
+  .icon-linkedin {
+    position: fixed;
+    left: 0;
+    bottom: 20.5rem;
+    color: var(--content-text-color);
+    padding: 1.2rem;
+
+    &:hover {
+      color: base.$color-orange;
+    }
+  }
+
+  .icon-github {
+    position: fixed;
+    left: 0;
+    bottom: 17.7rem;
+    color: var(--content-text-color);
+    padding: 1.2rem;
+
+    &:hover {
+      color: base.$color-orange;
+    }
+  }
+
+  .icon-instagram {
+    position: fixed;
+    left: 0;
+    bottom: 15rem;
+    color: var(--content-text-color);
+    padding: 1.2rem;
+
+    &:hover {
+      color: base.$color-orange;
+    }
   }
 }
