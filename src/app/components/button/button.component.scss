@@ -14,7 +14,9 @@ button {
   width: 100px;
   height: 100px;
 
-  &:hover {
-    opacity: 0.9;
+  p {
+    &:hover {
+      color: base.$color-orange;
+    }
   }
 }
