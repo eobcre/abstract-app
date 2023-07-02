@@ -1,4 +1,13 @@
-.container {
+@use "../../../scss/base";
+
+.work-container {
   background-color: var(--main-content-background-color);
   height: 100vh;
+
+  h1 {
+    text-align: center;
+    color: base.$color-orange;
+    font-family: base.$font-title-base;
+    font-size: 2.2rem;
+  }
 }
