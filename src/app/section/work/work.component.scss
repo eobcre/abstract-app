@@ -5,11 +5,21 @@
   padding: 4rem 2.5rem;
   height: auto;
 
+  .intro {
+    display: flex;
+    justify-content: center;
+  }
+
   h1 {
-    text-align: center;
     color: base.$color-orange;
     font-family: base.$font-base;
     font-size: 2.2rem;
+  }
+
+  .dot {
+    color: base.$color-red;
+    font-size: 2.2rem;
+    margin-left: 5px;
   }
 
   .inner-container {
