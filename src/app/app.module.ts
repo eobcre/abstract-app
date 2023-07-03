@@ -8,6 +8,7 @@ import { HomeComponent } from './section/home/home.component';
 import { AboutComponent } from './section/about/about.component';
 import { WorkComponent } from './section/work/work.component';
 import { ContactComponent } from './section/contact/contact.component';
+import { FooterComponent } from './section/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ThemeComponent } from './components/theme/theme.component';
 import { SideFooterComponent } from './components/side-footer/side-footer.component';
@@ -20,6 +21,7 @@ import { SideFooterComponent } from './components/side-footer/side-footer.compon
     AboutComponent,
     WorkComponent,
     ContactComponent,
+    FooterComponent,
     ButtonComponent,
     ThemeComponent,
     SideFooterComponent,
