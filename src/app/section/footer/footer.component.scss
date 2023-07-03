@@ -1,0 +1,12 @@
+@use "../../../scss/base";
+
+footer {
+  text-align: center;
+  font-family: base.$font-base;
+  background-color: var(--main-content-background-color);
+  padding: 30px 0;
+
+  small {
+    color: var(--content-text-color);
+  }
+}
