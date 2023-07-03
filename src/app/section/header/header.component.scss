@@ -1,3 +1,5 @@
+@use "../../../scss/base";
+
 header {
   position: sticky;
   top: 0;
@@ -13,7 +15,7 @@ header {
     align-items: center;
     color: #ede6d4;
     font-size: 1.2rem;
-    font-family: "Abril Fatface", cursive;
+    font-family: base.$font-base;
     letter-spacing: 1px;
     list-style: none;
 
