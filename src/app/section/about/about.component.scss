@@ -15,6 +15,16 @@
     font-size: 2.2rem;
   }
 
+  .intro {
+    display: flex;
+  }
+
+  .dot {
+    color: base.$color-red;
+    font-size: 2.2rem;
+    margin-left: 5px;
+  }
+
   p {
     color: var(--content-text-color);
     font-family: base.$font-base;
