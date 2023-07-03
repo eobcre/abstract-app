@@ -1,3 +1,15 @@
 <div class="work-container">
-  <h1>My Work</h1>
+  <div class="intro">
+    <h1>My Work</h1>
+    <h1 class="dot">.</h1>
+  </div>
+  <div class="inner-container">
+    <div *ngFor="let workData of workData">
+      <img [src]="workData.src" alt="{{ workData.name }}" />
+      <div class="content-container">
+        <h2>{{ workData.name }}</h2>
+        <p>{{ workData.description }}</p>
+      </div>
+    </div>
+  </div>
 </div>
