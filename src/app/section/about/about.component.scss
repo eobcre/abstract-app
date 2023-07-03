@@ -21,6 +21,10 @@
     font-size: 1.1rem;
     line-height: 1.6rem;
     margin-top: 2rem;
+
+    span {
+      color: base.$color-red;
+    }
   }
 }
 
