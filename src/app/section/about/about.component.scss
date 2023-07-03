@@ -11,13 +11,13 @@
 
   h1 {
     color: base.$color-orange;
-    font-family: base.$font-title-base;
+    font-family: base.$font-base;
     font-size: 2.2rem;
   }
 
   p {
     color: var(--content-text-color);
-    font-family: base.$font-p-base;
+    font-family: base.$font-base;
     font-size: 1.1rem;
     line-height: 1.6rem;
     margin-top: 2rem;
@@ -31,7 +31,7 @@
 
 button {
   color: var(--content-text-color);
-  font-family: base.$font-p-base;
+  font-family: base.$font-base;
   border-radius: 3px;
   margin-top: 2rem;
   padding: 4px 30px;
@@ -50,7 +50,7 @@ button {
     flex-wrap: wrap;
     gap: 1rem;
     color: var(--content-text-color);
-    font-family: base.$font-title-base;
+    font-family: base.$font-base;
     font-size: 1.1rem;
     list-style: none;
 
