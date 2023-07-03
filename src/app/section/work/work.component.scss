@@ -2,12 +2,35 @@
 
 .work-container {
   background-color: var(--main-content-background-color);
-  height: 100vh;
+  padding: 4rem 2.5rem;
+  height: auto;
 
   h1 {
     text-align: center;
     color: base.$color-orange;
-    font-family: base.$font-title-base;
+    font-family: base.$font-base;
     font-size: 2.2rem;
+  }
+
+  .inner-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+
+    img {
+      border-radius: 5px;
+      width: 670px;
+      height: 450px;
+    }
+
+    h2 {
+      color: base.$color-blue;
+      font-family: base.$font-base;
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-family: base.$font-base;
+    }
   }
 }
