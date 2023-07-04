@@ -1,14 +1,27 @@
 <div class="work-container">
-  <div class="intro">
+  <div class="title-container">
     <h1>My Work</h1>
     <h1 class="dot">.</h1>
   </div>
-  <div class="inner-container">
-    <div *ngFor="let workData of workData">
-      <img [src]="workData.src" alt="{{ workData.name }}" />
-      <div class="content-container">
+  <div class="wrapper">
+    <div *ngFor="let workData of workData" class="main-container">
+      <img
+        [src]="workData.src"
+        alt="{{ workData.name }}"
+        width="400"
+        class="app-image"
+      />
+      <img
+        src="../../../assets/image/ab-image.png"
+        alt="png"
+        width="200"
+        class="ab-image"
+      />
+      <div class="main-sub-container">
         <h2>{{ workData.name }}</h2>
-        <p>{{ workData.description }}</p>
+        <app-button></app-button>
+        <app-button></app-button>
+        <app-button></app-button>
       </div>
     </div>
   </div>
