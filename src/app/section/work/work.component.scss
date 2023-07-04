@@ -2,10 +2,9 @@
 
 .work-container {
   background-color: var(--main-content-background-color);
-  padding-left: 3rem;
   height: auto;
 
-  .intro {
+  .title-container {
     display: flex;
     justify-content: center;
   }
@@ -23,36 +22,43 @@
     margin-left: 5px;
   }
 
-  .inner-container {
-    position: relative;
+  .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
     padding: 40px 0;
-    width: 500px;
+    width: 80%;
+
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+    }
 
     .app-image {
       position: absolute;
       z-index: 10;
       border-radius: 10px;
-      margin-left: 50px;
     }
 
     .ab-image {
       position: relative;
       top: 2rem;
-      left: 16.5rem;
+      left: 12rem;
       transform: rotate(90deg);
     }
 
-    h2 {
-      color: base.$color-blue;
-      font-family: base.$font-base;
-      font-size: 1.3rem;
-    }
+    .main-sub-container {
+      display: flex;
 
-    p {
-      font-family: base.$font-base;
+      h2 {
+        color: base.$color-blue;
+        font-family: base.$font-base;
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-family: base.$font-base;
+      }
     }
   }
 }
