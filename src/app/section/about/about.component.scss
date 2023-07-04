@@ -1,21 +1,26 @@
 @use "../../../scss/base";
 
 .about-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   background-color: var(--main-content-background-color);
   transition-duration: 500ms;
-  margin: 0 auto;
-  padding: 4rem 2.5rem;
+  padding: 4rem 0;
   height: auto;
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    margin: 0 auto;
+    width: 90%;
+  }
 
   h1 {
     color: base.$color-orange;
     font-family: base.$font-base;
     font-size: 2.2rem;
+    padding: 3rem 0;
   }
 
-  .intro {
+  .title-container {
     display: flex;
   }
 
@@ -39,7 +44,7 @@
   }
 }
 
-.inner-container {
+.container {
   margin: 0 auto;
   width: 80%;
 }
