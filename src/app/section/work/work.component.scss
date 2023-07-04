@@ -2,7 +2,7 @@
 
 .work-container {
   background-color: var(--main-content-background-color);
-  padding: 4rem 2.5rem;
+  padding-left: 3rem;
   height: auto;
 
   .intro {
@@ -14,6 +14,7 @@
     color: base.$color-orange;
     font-family: base.$font-base;
     font-size: 2.2rem;
+    padding-bottom: 3rem;
   }
 
   .dot {
@@ -23,14 +24,25 @@
   }
 
   .inner-container {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 40px 0;
+    width: 500px;
 
-    img {
-      border-radius: 5px;
-      width: 670px;
-      height: 450px;
+    .app-image {
+      position: absolute;
+      z-index: 10;
+      border-radius: 10px;
+      margin-left: 50px;
+    }
+
+    .ab-image {
+      position: relative;
+      top: 2rem;
+      left: 16.5rem;
+      transform: rotate(90deg);
     }
 
     h2 {
