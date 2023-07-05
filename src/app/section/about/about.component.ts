@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { skillData } from 'src/data/skillData';
 
 @Component({
@@ -6,6 +6,11 @@ import { skillData } from 'src/data/skillData';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
   skillData = skillData;
+
+  public buttonResume: String = '';
+  ngOnInit() {
+    this.buttonResume = 'Resume';
+  }
 }
