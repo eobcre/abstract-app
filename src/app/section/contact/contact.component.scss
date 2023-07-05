@@ -3,7 +3,11 @@
 .contact-container {
   background-color: var(--main-content-background-color);
   padding: 4rem 0;
-  height: 100vh;
+  height: auto;
+
+  .wrapper {
+    padding: 40px 0;
+  }
 
   .intro {
     display: flex;
@@ -25,5 +29,27 @@
     flex-direction: column;
     margin: 0 auto;
     width: 50%;
+
+    label {
+      color: base.$color-blue;
+      font-family: base.$font-base;
+    }
+
+    input,
+    textarea {
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .button-container {
+      margin: 0 auto;
+    }
   }
 }
