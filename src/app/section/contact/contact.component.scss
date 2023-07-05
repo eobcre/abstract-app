@@ -2,6 +2,7 @@
 
 .contact-container {
   background-color: var(--main-content-background-color);
+  padding: 4rem 0;
   height: 100vh;
 
   .intro {
@@ -10,9 +11,7 @@
   }
 
   h1 {
-    color: base.$color-orange;
-    font-family: base.$font-base;
-    font-size: 2.2rem;
+    @extend h1;
   }
 
   .dot {
