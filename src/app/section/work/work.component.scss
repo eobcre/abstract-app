@@ -2,6 +2,7 @@
 
 .work-container {
   background-color: var(--main-content-background-color);
+  padding: 4rem 0;
   height: auto;
 
   .title-container {
@@ -10,10 +11,7 @@
   }
 
   h1 {
-    color: base.$color-orange;
-    font-family: base.$font-base;
-    font-size: 2.2rem;
-    padding: 3rem 0;
+    @extend h1;
   }
 
   .dot {
