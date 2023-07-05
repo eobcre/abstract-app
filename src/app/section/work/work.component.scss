@@ -8,16 +8,16 @@
   .title-container {
     display: flex;
     justify-content: center;
-  }
 
-  h1 {
-    @extend h1;
-  }
+    h1 {
+      @extend h1;
+    }
 
-  .dot {
-    color: base.$color-red;
-    font-size: 2.2rem;
-    margin-left: 5px;
+    .dot {
+      color: base.$color-red;
+      font-size: 2.2rem;
+      margin-left: 5px;
+    }
   }
 
   .wrapper {
@@ -30,7 +30,7 @@
     .main-container {
       display: flex;
       justify-content: space-between;
-      padding: 50px 0;
+      padding: 50px 70px;
     }
 
     .app-image {
@@ -47,12 +47,12 @@
     }
 
     .main-sub-container {
-      display: flex;
-
       h2 {
+        display: flex;
+        justify-content: center;
         color: base.$color-blue;
         font-family: base.$font-base;
-        font-size: 1.3rem;
+        font-size: 2rem;
       }
 
       p {
