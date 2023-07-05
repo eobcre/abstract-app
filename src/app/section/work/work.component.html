@@ -6,7 +6,7 @@
   <div class="wrapper">
     <div *ngFor="let workData of workData" class="main-container">
       <img
-        [src]="workData.src"
+        [src]="workData.image"
         alt="{{ workData.name }}"
         width="400"
         class="app-image"
@@ -19,9 +19,23 @@
       />
       <div class="main-sub-container">
         <h2>{{ workData.name }}</h2>
-        <app-button></app-button>
-        <app-button></app-button>
-        <app-button></app-button>
+
+        <img
+          src="../../../assets/image/underline.png"
+          alt="Image"
+          width="150"
+        />
+
+        <div class="button-container">
+          <app-button
+            [buttonName]="buttonApp"
+            [url]="workData.url"
+          ></app-button>
+          <app-button
+            [buttonName]="buttonCode"
+            [url]="workData.url_src"
+          ></app-button>
+        </div>
       </div>
     </div>
   </div>
