@@ -14,10 +14,7 @@
   }
 
   h1 {
-    color: base.$color-orange;
-    font-family: base.$font-base;
-    font-size: 2.2rem;
-    padding: 3rem 0;
+    @extend h1;
   }
 
   .title-container {
