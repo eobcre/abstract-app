@@ -2,16 +2,22 @@ export const workData = [
   {
     id: 1,
     name: 'Cait Salon',
-    src: '../../../assets/work_image/desktop/salon.png',
+    image: '../../../assets/work_image/desktop/salon.png',
+    url: 'https://cait-salon.herokuapp.com/',
+    url_src: 'https://github.com/eobcre/salon-react',
   },
   {
-    id: 1,
+    id: 2,
     name: 'Sticky Note',
-    src: '../../../assets/work_image/desktop/note.png',
+    image: '../../../assets/work_image/desktop/note.png',
+    url: 'https://sticky-notes-app.herokuapp.com/',
+    url_src: 'https://github.com/eobcre/post-it-app',
   },
   {
-    id: 1,
+    id: 3,
     name: 'Omikuji',
-    src: '../../../assets/work_image/desktop/omikuji.png',
+    image: '../../../assets/work_image/desktop/omikuji.png',
+    url: 'https://omikuji-fortune-app.herokuapp.com/',
+    url_src: 'https://github.com/eobcre/omikuji-fortune-app',
   },
 ];
