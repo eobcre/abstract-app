@@ -1,5 +1,12 @@
 @use "../../../scss/base";
 
+@mixin hover {
+  &:hover {
+    color: base.$color-orange;
+    transition-duration: 0.8s;
+  }
+}
+
 .side-footer-container {
   p {
     position: fixed;
@@ -11,10 +18,7 @@
     letter-spacing: 1px;
     writing-mode: vertical-rl;
     padding: 1.5rem;
-
-    &:hover {
-      color: base.$color-orange;
-    }
+    @include hover;
   }
 
   span {
@@ -25,42 +29,27 @@
     height: 40px;
     margin-left: 2rem;
   }
-}
 
-.icon-container {
-  .icon-linkedin {
-    position: fixed;
-    left: 0;
-    bottom: 20.5rem;
-    color: var(--content-text-color);
-    padding: 1.2rem;
-
-    &:hover {
-      color: base.$color-orange;
+  .icon-container {
+    .icon-linkedin {
+      position: fixed;
+      left: 0;
+      bottom: 20.5rem;
+      color: var(--content-text-color);
+      padding: 1.2rem;
+      @include hover;
     }
-  }
 
-  .icon-github {
-    position: fixed;
-    left: 0;
-    bottom: 17.7rem;
-    color: var(--content-text-color);
-    padding: 1.2rem;
-
-    &:hover {
-      color: base.$color-orange;
+    .icon-github {
+      @extend .icon-linkedin;
+      bottom: 17.7rem;
+      @include hover;
     }
-  }
 
-  .icon-instagram {
-    position: fixed;
-    left: 0;
-    bottom: 15rem;
-    color: var(--content-text-color);
-    padding: 1.2rem;
-
-    &:hover {
-      color: base.$color-orange;
+    .icon-instagram {
+      @extend .icon-linkedin;
+      bottom: 15rem;
+      @include hover;
     }
   }
 }
