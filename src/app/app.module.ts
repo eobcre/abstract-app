@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './section/header/header.component';
@@ -29,7 +28,7 @@ import { SideFooterComponent } from './components/side-footer/side-footer.compon
     ThemeComponent,
     SideFooterComponent,
   ],
-  imports: [BrowserModule, FontAwesomeModule, SweetAlert2Module.forRoot()],
+  imports: [BrowserModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
