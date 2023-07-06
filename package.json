@@ -9,7 +9,6 @@
     "ng": "ng",
     "heroku-postbuild": "npm run build",
     "npm start": "node server.js",
-    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
