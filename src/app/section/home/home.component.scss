@@ -1,47 +1,148 @@
 @use "../../../scss/base";
+@use "../../../scss/breakpoints";
 
 .container {
   display: flex;
-  justify-content: space-between;
   background-color: var(--main-content-background-color);
   transition-duration: 500ms;
-  padding: 0 140px;
+  padding-left: 6.5rem;
   height: 100vh;
+  width: 100%;
+
+  @include breakpoints.tab {
+    justify-content: center;
+    padding: 0;
+  }
 
   .title-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    %title-small {
+      font-family: base.$font-base;
+      font-size: 3rem;
+      letter-spacing: 1px;
+      margin: 10px 0;
+
+      @include breakpoints.pc {
+        font-size: 2rem;
+      }
+
+      @include breakpoints.md {
+        font-size: 1.7rem;
+      }
+
+      @include breakpoints.tab {
+        font-size: 1.4rem;
+      }
+    }
+
+    .title-sm-1 {
+      @extend %title-small;
+      color: base.$color-orange;
+    }
+
+    .title-sm-2 {
+      @extend %title-small;
+      color: base.$color-pink;
+    }
+
+    .title-lg {
+      color: base.$color-blue;
+      font-family: base.$font-base;
+      font-size: 4rem;
+
+      @include breakpoints.pc {
+        font-size: 4rem;
+      }
+
+      @include breakpoints.md {
+        font-size: 3.5rem;
+      }
+
+      @include breakpoints.sm {
+        font-size: 2.6rem;
+      }
+
+      @include breakpoints.sp {
+        font-size: 2rem;
+      }
+
+      span {
+        color: base.$color-red;
+        font-size: 4rem;
+        margin-left: 5px;
+
+        @include breakpoints.pc {
+          font-size: 4rem;
+        }
+
+        @include breakpoints.md {
+          font-size: 3.5rem;
+        }
+
+        @include breakpoints.sm {
+          font-size: 2.6rem;
+        }
+
+        @include breakpoints.sp {
+          font-size: 2rem;
+        }
+      }
+    }
   }
-}
 
-.title-small {
-  color: base.$color-orange;
-  font-family: base.$font-base;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  margin: 10px 0;
-}
+  .image-container {
+    position: fixed;
+    right: 0;
 
-.main-container {
-  display: flex;
-  color: base.$color-blue;
-  font-family: base.$font-base;
-  font-size: 3.5rem;
-  font-weight: bold;
+    @include breakpoints.sm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .dot {
-    color: base.$color-red;
-    font-size: 3.5rem;
-    margin-left: 5px;
+    .ab-image {
+      max-height: 100vh;
+
+      @include breakpoints.tab {
+        display: none;
+      }
+    }
   }
-}
 
-.image-container {
-  display: flex;
-  justify-content: center;
+  .ab-container {
+    %ab-image {
+      display: none;
+      position: absolute;
+      width: 140px;
 
-  img {
-    height: 100vh;
+      @include breakpoints.tab {
+        display: block;
+      }
+    }
+
+    .ab_1 {
+      @extend %ab-image;
+      left: 0;
+    }
+
+    .ab_2 {
+      @extend %ab-image;
+      right: 0;
+    }
+
+    .ab_3 {
+      @extend %ab-image;
+      left: 0;
+      bottom: -70px;
+    }
+
+    .ab_4 {
+      @extend %ab-image;
+      right: 0;
+      bottom: -70px;
+    }
   }
 }
