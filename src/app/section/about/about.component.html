@@ -1,10 +1,9 @@
-<div class="about-container">
-  <div class="wrapper">
-    <div class="container">
-      <div class="title-container">
-        <h1>About Me</h1>
-        <h1 class="dot">.</h1>
-      </div>
+<div class="container">
+  <div class="about-container">
+    <div class="title-container">
+      <h1>Read Me<span class="dot">.</span></h1>
+    </div>
+    <div class="text-container">
       <p>
         Hello! My name is <span>Emmy</span> and I enjoy creating magical things.
         I am a recent graduate (as of March 2023) in Computer Science. I have
@@ -16,19 +15,18 @@
       </p>
       <app-button [buttonName]="buttonResume"></app-button>
     </div>
+  </div>
 
-    <div class="container skill-container">
-      <div class="title-container">
-        <h1>Skills</h1>
-        <h1 class="dot">.</h1>
-      </div>
-      <div class="skill-inner-container">
-        <ul>
-          <li *ngFor="let skillData of skillData">
-            {{ skillData.skill }}
-          </li>
-        </ul>
-      </div>
+  <div class="tech-container">
+    <div class="title-container">
+      <h1>Skills<span class="dot">.</span></h1>
+    </div>
+    <div class="text-container tech-inner-container">
+      <ul>
+        <li *ngFor="let skillData of skillData">
+          {{ skillData.skill }}
+        </li>
+      </ul>
     </div>
   </div>
 </div>
