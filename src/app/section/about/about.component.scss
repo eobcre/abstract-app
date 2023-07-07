@@ -1,88 +1,84 @@
 @use "../../../scss/base";
-
-.about-container {
-  background-color: var(--main-content-background-color);
-  transition-duration: 500ms;
-  padding: 4rem 0;
-  height: auto;
-
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  h1 {
-    @extend h1;
-  }
-
-  .title-container {
-    display: flex;
-  }
-
-  .dot {
-    color: base.$color-red;
-    font-size: 2.2rem;
-    margin-left: 5px;
-  }
-
-  p {
-    color: var(--content-text-color);
-    font-family: base.$font-base;
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-    margin-top: 2rem;
-
-    span {
-      font-size: 1.3rem;
-      font-weight: bold;
-    }
-  }
-}
+@use "../../../scss/breakpoints";
 
 .container {
-  margin: 0 auto;
-  width: 80%;
-}
+  background-color: var(--main-content-background-color);
+  padding: 3rem 0 3rem 6.5rem;
+  height: auto;
 
-button {
-  color: var(--content-text-color);
-  font-family: base.$font-base;
-  border-radius: 3px;
-  margin-top: 2rem;
-  padding: 4px 30px;
-}
+  @include breakpoints.tab {
+    padding-inline: 3rem;
+  }
 
-/* skills */
-.skill-container {
-  margin-top: 4rem;
-}
+  // about
+  .title.container {
+    h1 {
+      @extend h1;
 
-.skill-inner-container {
-  margin-top: 2rem;
+      span.dot {
+        color: base.$color-red;
+        font-size: 2.2rem;
+        margin-left: 5px;
+      }
+    }
 
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    color: var(--content-text-color);
-    font-family: base.$font-base;
-    font-size: 1.1rem;
-    list-style: none;
+    .text-container {
+      width: 50%;
 
-    li {
-      text-align: center;
-      border-radius: 3px;
-      padding: 0.5rem;
-      width: 8rem;
+      @include breakpoints.tab {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      p {
+        color: var(--content-text-color);
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        margin: 2rem 0;
+
+        span {
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+      }
+
+      button {
+        color: var(--content-text-color);
+        font-family: base.$font-base;
+        border-radius: 3px;
+        margin-top: 2rem;
+        padding: 4px 30px;
+      }
     }
   }
 }
 
-/* md */
-@media (min-width: 800px) {
-  .skill-container {
-    margin-top: 0;
+// skills
+.tech-container {
+  margin-top: 4rem;
+
+  .tech-inner-container {
+    margin-top: 2rem;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: var(--content-text-color);
+      font-size: 1.2rem;
+      font-weight: bold;
+      list-style: none;
+
+      @include breakpoints.tab {
+        justify-content: center;
+
+        li {
+          text-align: center;
+          border-radius: 3px;
+          padding: 0.5rem;
+          width: 8rem;
+        }
+      }
+    }
   }
 }
