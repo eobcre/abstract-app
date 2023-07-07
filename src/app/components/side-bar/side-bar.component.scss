@@ -1,0 +1,58 @@
+@use "../../../scss/base";
+@use "../../../scss/breakpoints";
+
+@mixin hover {
+  &:hover {
+    color: base.$color-orange;
+    transition-duration: 0.7s;
+  }
+}
+
+.side-footer-container {
+  @include breakpoints.tab {
+    display: none;
+  }
+
+  p {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: var(--content-text-color);
+    font-size: 1.1rem;
+    writing-mode: vertical-rl;
+    padding: 1.5rem;
+    @include hover;
+  }
+
+  span {
+    position: fixed;
+    left: 0;
+    bottom: 11rem;
+    border-left: 1px solid var(--content-text-color);
+    height: 70px;
+    margin-left: 2rem;
+  }
+
+  .icon-container {
+    .icon-linkedin {
+      position: fixed;
+      left: 0;
+      bottom: 20.5rem;
+      color: var(--content-text-color);
+      padding: 1.2rem;
+      @include hover;
+    }
+
+    .icon-github {
+      @extend .icon-linkedin;
+      bottom: 17.7rem;
+      @include hover;
+    }
+
+    .icon-instagram {
+      @extend .icon-linkedin;
+      bottom: 15rem;
+      @include hover;
+    }
+  }
+}
