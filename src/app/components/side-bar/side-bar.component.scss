@@ -13,26 +13,6 @@
     display: none;
   }
 
-  p {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    color: var(--content-text-color);
-    font-size: 1.1rem;
-    writing-mode: vertical-rl;
-    padding: 1.5rem;
-    @include hover;
-  }
-
-  span {
-    position: fixed;
-    left: 0;
-    bottom: 11rem;
-    border-left: 1px solid var(--content-text-color);
-    height: 70px;
-    margin-left: 2rem;
-  }
-
   .icon-container {
     .icon-linkedin {
       position: fixed;
@@ -54,5 +34,25 @@
       bottom: 15rem;
       @include hover;
     }
+  }
+
+  p {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: var(--content-text-color);
+    font-size: 1.1rem;
+    writing-mode: vertical-rl;
+    padding: 1.5rem;
+    @include hover;
+  }
+
+  span {
+    position: fixed;
+    left: 0;
+    bottom: 11rem;
+    border-left: 1px solid var(--content-text-color);
+    height: 70px;
+    margin-left: 2rem;
   }
 }
