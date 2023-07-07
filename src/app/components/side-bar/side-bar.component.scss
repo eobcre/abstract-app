@@ -36,6 +36,15 @@
     }
   }
 
+  span {
+    position: fixed;
+    left: 0;
+    bottom: 11rem;
+    border-left: 1px solid var(--content-text-color);
+    height: 70px;
+    margin-left: 2rem;
+  }
+
   p {
     position: fixed;
     left: 0;
@@ -45,14 +54,5 @@
     writing-mode: vertical-rl;
     padding: 1.5rem;
     @include hover;
-  }
-
-  span {
-    position: fixed;
-    left: 0;
-    bottom: 11rem;
-    border-left: 1px solid var(--content-text-color);
-    height: 70px;
-    margin-left: 2rem;
   }
 }
