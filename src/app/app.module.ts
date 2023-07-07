@@ -10,9 +10,8 @@ import { WorkComponent } from './section/work/work.component';
 import { ContactComponent } from './section/contact/contact.component';
 import { FooterComponent } from './section/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
-import { ButtonSendComponent } from './components/button-send/button-send.component';
 import { ThemeComponent } from './components/theme/theme.component';
-import { SideFooterComponent } from './components/side-footer/side-footer.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +23,8 @@ import { SideFooterComponent } from './components/side-footer/side-footer.compon
     ContactComponent,
     FooterComponent,
     ButtonComponent,
-    ButtonSendComponent,
     ThemeComponent,
-    SideFooterComponent,
+    SideBarComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],
