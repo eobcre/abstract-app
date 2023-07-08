@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLocation, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {
+  faLinkedin,
+  faGithub,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-contact',
@@ -13,5 +18,10 @@ export class ContactComponent {
     this.buttonSend = 'Send';
   }
 
+  faLocation = faLocation;
+  faEnvelope = faEnvelope;
+
   faLinkedin = faLinkedin;
+  faGithub = faGithub;
+  faInstagram = faInstagram;
 }
