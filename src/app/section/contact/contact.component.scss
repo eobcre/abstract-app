@@ -1,55 +1,39 @@
 @use "../../../scss/base";
+@use "../../../scss/breakpoints";
 
-.contact-container {
+.container {
   background-color: var(--main-content-background-color);
-  padding: 4rem 0;
+  padding: 3rem 0 3rem 6.5rem;
   height: auto;
 
-  .wrapper {
-    padding: 40px 0;
+  @include breakpoints.tab {
+    padding-inline: 3rem;
   }
 
-  .intro {
-    display: flex;
-    justify-content: center;
-  }
+  .title-container {
+    h1 {
+      @extend h1;
 
-  h1 {
-    @extend h1;
-  }
-
-  .dot {
-    color: base.$color-red;
-    font-size: 2.2rem;
-    margin-left: 5px;
+      span.dot {
+        color: base.$color-red;
+        font-size: 2.2rem;
+        margin-left: 5px;
+      }
+    }
   }
 
   form {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     width: 50%;
 
-    label {
-      color: base.$color-blue;
-      font-family: base.$font-base;
-    }
-
-    input,
-    textarea {
-      border-radius: 3px;
-      border: none;
-      outline: none;
-      margin: 10px 0;
-      padding: 10px;
-    }
-
-    textarea {
-      resize: none;
-    }
-
-    .button-container {
+    @include breakpoints.tab {
       margin: 0 auto;
+      width: 100%;
     }
+  }
+
+  .button-container {
+    margin-top: 2rem;
   }
 }
