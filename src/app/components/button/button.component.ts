@@ -7,8 +7,7 @@ import { workData } from 'src/data/workData';
   styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-  workData = workData;
-
   @Input() buttonName: String = '';
-  @Input() url: any;
+
+  workData = workData;
 }
