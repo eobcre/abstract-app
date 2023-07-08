@@ -31,6 +31,27 @@
       margin: 0 auto;
       width: 100%;
     }
+
+    label {
+      color: var(--content-text-color);
+    }
+
+    input,
+    textarea {
+      outline: none;
+      border: none;
+      border-radius: 3px;
+    }
+
+    input {
+      margin: 8px 0;
+      padding: 6px;
+    }
+
+    textarea {
+      resize: none;
+      margin-top: 8px;
+    }
   }
 
   .button-container {
