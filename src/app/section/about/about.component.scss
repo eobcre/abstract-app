@@ -60,13 +60,13 @@
 
         @include breakpoints.tab {
           justify-content: center;
+        }
 
-          li {
-            text-align: center;
-            border-radius: 3px;
-            padding: 0.5rem;
-            width: 8rem;
-          }
+        li {
+          text-align: center;
+          border-radius: 3px;
+          padding: 0.5rem;
+          width: 8rem;
         }
       }
     }
