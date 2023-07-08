@@ -7,10 +7,11 @@ import { skillData } from 'src/data/skillData';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-  skillData = skillData;
-
   public buttonResume: String = '';
+
   ngOnInit() {
     this.buttonResume = 'Resume';
   }
+
+  skillData = skillData;
 }
