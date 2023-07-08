@@ -4,10 +4,11 @@
 .container {
   background-color: var(--main-content-background-color);
   padding: 3rem 0 3rem 6.5rem;
-  height: auto;
+  height: 100vh;
 
   @include breakpoints.tab {
     padding-inline: 3rem;
+    height: auto;
   }
 
   .title-container {
@@ -22,10 +23,88 @@
     }
   }
 
+  .contents-container {
+    display: none;
+
+    @include breakpoints.tab {
+      display: block;
+
+      .text {
+        color: var(--content-text-color);
+        line-height: 1.6rem;
+        margin: 0 auto;
+        width: 300px;
+      }
+    }
+
+    .contents-inner-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      span {
+        border: 0.6px solid var(--content-text-color);
+        margin: 1rem 0;
+        width: 30rem;
+
+        @include breakpoints.sp {
+          width: 20rem;
+        }
+      }
+
+      .box-container {
+        display: flex;
+        gap: 4rem;
+        color: var(--content-text-color);
+        margin-top: 4rem;
+
+        @include breakpoints.sp {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .box {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          a {
+            color: var(--content-text-color);
+            &:hover {
+              color: base.$color-orange;
+              transition-duration: 0.7s;
+            }
+          }
+        }
+      }
+    }
+
+    .icon-container {
+      @include breakpoints.tab {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+      }
+
+      .icon-linkedin,
+      .icon-github,
+      .icon-instagram {
+        color: var(--content-text-color);
+        margin-right: 1.2rem;
+
+        &:hover {
+          color: base.$color-orange;
+          transition-duration: 0.7s;
+        }
+      }
+    }
+  }
+
   form {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 480px;
 
     @include breakpoints.tab {
       margin: 0 auto;
