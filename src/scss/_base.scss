@@ -36,10 +36,8 @@ button {
   padding: 1rem;
   width: 9rem;
 
-  p {
-    &:hover {
-      color: $color-orange;
-      transition-duration: 0.7s;
-    }
+  &:hover {
+    color: $color-orange;
+    transition-duration: 0.7s;
   }
 }
