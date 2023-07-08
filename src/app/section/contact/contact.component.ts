@@ -15,7 +15,7 @@ export class ContactComponent {
   public buttonSend: String = '';
 
   ngOnInit() {
-    this.buttonSend = 'Hello';
+    this.buttonSend = 'Hello\t.';
   }
 
   faLocation = faLocation;
