@@ -23,4 +23,18 @@ export class HeaderComponent {
     const element = document.getElementById(sectionId);
     element ? element.scrollIntoView({ behavior: 'smooth' }) : null;
   }
+
+  // nav
+  isNavVisible: boolean = false;
+
+  navItems = [
+    { name: 'About', url: '/about' },
+    { name: 'Work', url: '/work' },
+    { name: 'Contact', url: './contact' },
+    { name: 'Resume' },
+  ];
+
+  navToggle() {
+    this.isNavVisible = !this.isNavVisible;
+  }
 }
