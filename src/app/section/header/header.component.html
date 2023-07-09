@@ -1,10 +1,9 @@
 <header>
   <nav>
-    <ul>
-      <li><a (click)="navSmoothScroll('about')">About</a></li>
-      <li><a (click)="navSmoothScroll('work')">Work</a></li>
-      <li><a (click)="navSmoothScroll('contact')">Contact</a></li>
-      <li class="list-resume">Resume</li>
+    <ul [class.show]="isNavVisible">
+      <li *ngFor="let item of navItems">
+        <a href="{{ item.url }}">{{ item.name }}</a>
+      </li>
     </ul>
   </nav>
 
@@ -16,6 +15,8 @@
         (change)="onThemeSwitchChange()"
       />
       <span class="slider"></span>
+      <img src="../../../assets/theme/light.svg" alt="Theme" />
+      <img src="../../../assets/theme/dark.svg" alt="Theme" />
     </label>
   </div>
 
